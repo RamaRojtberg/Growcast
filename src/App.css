@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*=======================================================*/
+
+@font-face {
+  font-family: 'Aeonik-Regular';
+  src: local('Aeonik-Regular'),
+       url("./fonts/Aeonik-Regular.otf") format("otf")
+}
+
+body {
+  font-family: Aeonik-Regular
+}
+
+
+.header {
+  background-color: #212D2B;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+  padding: 1rem;
+}
+.logo img {
+  width: 200px;
+}
+@media(max-width:576px){
+  .logo img {
+    width: 120px;
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+.contact p {
+  margin-right: 10px;
+}
+
+
+/*=======================================================*/
+
+main {
+  background: rgb(232,201,168);
+  background: linear-gradient(350deg, rgba(232,201,168,1) 0%, rgba(122,78,45,1) 25%, rgba(33,45,43,1) 61%); 
+  /* height: 600px; */
+}
+main h1 {
+  color: #ffffff;
+  margin: 0 0 0 0;
+  padding: 40px 0 0 0;
+  text-align: center;
+  font-size: 3.5em;
+}
+@media(max-width:576px){
+  main h1 {
+    font-size: 2.5em;
+  }
+}
+
+.growContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media(max-width:576px){
+  .smGrow{
+    display: none;
+  }
+}
+
+.mainGrow {
+  max-width: 600px;
+}
+@media(max-width:576px){
+  .mainGrow {
+    max-width: 400px;
+  }
+}
+
+
+/*======================================================*/
+.devices {
+  background-color: #d5d4cf;
+}
+
+/*=====================================================*/
+.ourProducts {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  width: 50%;
+}
+.product {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.prodImg img {
+  height: 250px;
+}
+@media(max-width:576px){
+  .product {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prodImg {
+    display: flex;
+    justify-content: center;
+  }
+  .prodImg img {
+    height: 200px;
+  }
+  .description {
+    width: 100%;
+  }
+}
+
+/*=====================================================*/
+.aboutUs, .aboutUs div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUs div {
+  width: 80%;
+  color: #ffffff;
+}
+
+/*======================================================*/
+.gallery {
+  width: 100%;
+  padding-top: 50px;
+}
+.imgSwiper {
+  width: 100%;
+}
